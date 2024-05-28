@@ -10,7 +10,7 @@ MailSecure is a service that scrapes your email inbox and sorts it into phishing
 
 
 ### Prerequisites
-Make sure you have Python installed on your system. You can download Python from here.
+Make sure you have Python installed on your system. You can download Python from [here](https://www.python.org/downloads/).
 
 
 
@@ -31,9 +31,10 @@ pip install -r requirements.txt
 
 ## Usage
 
-###Run the program 
--If you're using an IDE like VS Code, simply press F5 to run the program.
--Alternatively, you can run the program from the command line:
+Run the program:
+
+- If you're using an IDE like VS Code, simply press F5 to run the program.
+- Alternatively, you can run the program from the command line:
 
 ```python
 python main.py
