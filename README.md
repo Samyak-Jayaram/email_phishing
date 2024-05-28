@@ -1,55 +1,37 @@
-MailSecure
+# Foobar
 
-MailSecure is a service that scrapes your email inbox and sorts it into phishing and non-phishing categories, helping you keep your inbox secure.
+Foobar is a Python library for dealing with word pluralization.
 
-Features
-Scrapes email inbox for analysis.
-Classifies emails as phishing or non-phishing.
-Helps protect against email scams and phishing attacks.
-Getting Started
-Prerequisites
-Make sure you have Python installed on your system. You can download Python from here.
+## Installation
 
-Installation
-Clone the repository:
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-bash
-Copy code
-git clone https://github.com/yourusername/MailSecure.git
-cd MailSecure
-Install the required dependencies:
+```bash
+pip install foobar
+```
 
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Run the program:
-If you're using an IDE like VS Code, simply press F5 to run the program.
-Alternatively, you can run the program from the command line:
-bash
-Copy code
-python main.py
-Configuration
-You may need to configure email settings and other parameters. These can be set in the configuration file (if applicable) or directly in the code.
+## Usage
 
-Contributing
-Fork the repository.
-Create your feature branch:
-bash
-Copy code
-git checkout -b feature/YourFeature
-Commit your changes:
-bash
-Copy code
-git commit -m 'Add some feature'
-Push to the branch:
-bash
-Copy code
-git push origin feature/YourFeature
-Open a pull request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+```python
+import foobar
 
-Acknowledgments
-Inspiration
-References
+# returns 'words'
+foobar.pluralize('word')
+
+# returns 'geese'
+foobar.pluralize('goose')
+
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
