@@ -1,28 +1,42 @@
-# Foobar
+# MailSecure
 
-Foobar is a Python library for dealing with word pluralization.
+MailSecure is a service that scrapes your email inbox and sorts it into phishing and non-phishing categories, helping you keep your inbox secure.
+
+## Features
+
+- Scrapes email inbox for analysis.
+- Classifies emails as phishing or non-phishing.
+- Helps protect against email scams and phishing attacks.
+
+
+### Prerequisites
+Make sure you have Python installed on your system. You can download Python from here.
+
+
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Clone the repository:
 
 ```bash
-pip install foobar
+git clone https://github.com/yourusername/MailSecure.git
+cd MailSecure
 ```
+
+Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Usage
 
+###Run the program 
+-If you're using an IDE like VS Code, simply press F5 to run the program.
+-Alternatively, you can run the program from the command line:
+
 ```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+python main.py
 ```
 
 ## Contributing
