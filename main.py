@@ -8,7 +8,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 
-df = pd.read_csv("D:/Mini-project/mp-6th sem/MP_6th_sem/code/email.csv")
+df = pd.read_csv("./email.csv")
 df = df.dropna()
 
 email_type_counts = df['Email Type'].value_counts()
