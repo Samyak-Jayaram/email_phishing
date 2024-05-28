@@ -1,4 +1,4 @@
-                                          MailSecure
+MailSecure
 
 MailSecure is a service that scrapes your email inbox and sorts it into phishing and non-phishing categories, helping you keep your inbox secure.
 
