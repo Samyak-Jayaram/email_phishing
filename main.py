@@ -96,16 +96,19 @@ def classify_email():
     if not email_text:
         result_label.config(text="Prediction: Enter text", font=('Times New Roman', 18, 'bold'))
         root.after(30000, clear_prediction)
+    #If entered 
     else:
         prediction = classifier.predict([email_text])[0]
         result_label.config(text=f"Prediction: {prediction}", font=('Times New Roman', 18, 'bold'))
         root.after(30000, clear_prediction)
 
 
+# Function to clear the prediction
 def clear_prediction():
     result_label.config(text="Prediction: ")
 
 
+# Function to display the predictions and metrics
 def display_metrics():
     metrics_text = f"Accuracy Score: {accuracy:.2f}\n\n"
     metrics_text += f"Confusion Matrix:\n{conf_matrix}\n\n"
@@ -113,9 +116,11 @@ def display_metrics():
     messagebox.showinfo("Model Metrics", metrics_text)
 
 
+# Root is the GUI window in Tkinter
 root = tk.Tk()
 root.title("Phishing Email Classifier")
 
+# Styling Component for the window
 frame = tk.Frame(root)
 frame.pack(padx=10, pady=10)
 
@@ -134,4 +139,6 @@ result_label.grid(row=3, column=0, pady=5)
 metrics_button = tk.Button(frame, text="Show Model Metrics", font=('Times New Roman', 10, 'bold'), command=display_metrics)
 metrics_button.grid(row=4, column=0, pady=5)
 
+
+# Main component of tKinter to take in events such as button press or inputs in general
 root.mainloop()
